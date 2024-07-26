@@ -1,0 +1,6 @@
+a_20_n18# 20 -17 ndif
+out 9 2 pdif
+B 24 -8 pc
+A 13 -8 pc
+vdd 3 -3 nw
+gnd 9 -17 ndif

@@ -1,0 +1,11 @@
+| units: 20 tech: scmos format: MIT
+p B vdd out 2 15 29 2 s=67,24 d=120,46
+n B a_20_n18# out 2 5 29 -17 s=22,14 d=40,26
+n A gnd a_20_n18# 2 5 18 -17 s=45,28 d=22,14
+p A out vdd 2 15 18 2 s=135,48 d=67,24
+R out 26
+R B 117
+R A 117
+C vdd0 3.3
+R vdd 1378
+R gnd 35

@@ -1,0 +1,13 @@
+*rc network analysis
+
+c1 1 2 1u
+r1 2 0 1k
+Vin 1 gnd pwl(0ms 0v 10ms 0v 11ms 5v 50ms 5v 51ms 0v 60ms)
+
+.tran 0.1ms 60ms 
+.control
+run
+plot v(1)  v(2)
+.endc
+.end
+

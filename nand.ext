@@ -1,0 +1,24 @@
+timestamp 1717074207
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "a_20_n18#" 7 0.893888 20 -18 ndif 45 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "out" 26 306.33 9 2 pdif 40 26 255 94 0 0 0 0 0 0 0 0 0 0 254 146 0 0 0 0 0 0
+node "B" 117 419.802 24 -9 pc 0 0 0 0 0 0 0 0 0 0 98 92 0 0 28 22 0 0 0 0 0 0
+node "A" 117 456.375 13 -9 pc 0 0 0 0 0 0 0 0 0 0 98 92 0 0 28 22 0 0 0 0 0 0
+node "vdd" 1378 3301.3 3 -4 nw 48 48 135 48 1344 148 0 0 0 0 0 0 0 0 172 94 0 0 0 0 0 0
+substrate "gnd" 0 0 9 -18 ndif 45 28 48 48 0 0 0 0 0 0 0 0 0 0 140 78 0 0 0 0 0 0
+cap "a_20_n18#" "B" 0.357555
+cap "a_20_n18#" "out" 0.178778
+cap "A" "B" 64.6651
+cap "A" "vdd" 105.138
+cap "A" "out" 110.741
+cap "B" "vdd" 105.126
+cap "B" "out" 155.08
+cap "vdd" "out" 344.186
+device mosfet nfet 29 -18 30 -17 2 5 "gnd" "B" 4 0 "a_20_n18#" 5 22,14 "out" 5 40,26
+device mosfet nfet 18 -18 19 -17 2 5 "gnd" "A" 4 0 "gnd" 5 45,28 "a_20_n18#" 5 22,14
+device mosfet pfet 29 2 30 3 2 15 "vdd" "B" 4 0 "vdd" 15 67,24 "out" 15 120,46
+device mosfet pfet 18 2 19 3 2 15 "vdd" "A" 4 0 "out" 15 135,48 "vdd" 15 67,24

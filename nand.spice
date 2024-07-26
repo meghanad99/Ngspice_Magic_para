@@ -1,0 +1,23 @@
+* SPICE3 file created from /home/draju/vlsi/nand.ext - technology: scmos
+
+M1000 out B vdd vdd pfet w=3u l=0.4u
++  ad=4.8p pd=9.2u as=2.68p ps=4.8u
+M1001 out B a_20_n18# gnd nfet w=1u l=0.4u
++  ad=1.6p pd=5.2u as=0.88p ps=2.8u
+M1002 a_20_n18# A gnd gnd nfet w=1u l=0.4u
++  ad=0.88p pd=2.8u as=1.8p ps=5.6u
+M1003 vdd A out vdd pfet w=3u l=0.4u
++  ad=2.68p pd=4.8u as=5.4p ps=9.6u
+C0 a_20_n18# out 8.94e-19
+C1 out vdd 0.376738f
+C2 A B 0.064665f
+C3 a_20_n18# B 3.58e-19
+C4 A vdd 0.105613f
+C5 B vdd 0.105613f
+C6 A out 0.1115f
+C7 B out 0.156228f
+C8 a_20_n18# gnd 0.001609f **FLOATING
+C9 out gnd 0.289236f **FLOATING
+C10 B gnd 0.419802f **FLOATING
+C11 A gnd 0.456758f **FLOATING
+C12 vdd gnd 3.29483f **FLOATING

@@ -1,0 +1,51 @@
+timestamp 1717670427
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "a_14_n20#" 6 0.357555 14 -20 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n2_n20#" 6 0.357555 -2 -20 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n9_n20#" 31 523.096 -9 -20 ndc 40 36 90 42 0 0 0 0 0 0 0 0 0 0 238 156 0 0 0 0 0 0
+node "a_n9_6#" 39 152.128 -9 6 pdif 0 0 240 122 0 0 0 0 0 0 0 0 0 0 212 130 0 0 0 0 0 0
+node "A_bar" 146 717.377 -18 -20 ndif 20 18 40 26 0 0 0 0 0 0 106 102 0 0 144 88 153 104 0 0 0 0
+node "B_bar" 145 692.422 9 -9 pc 20 18 40 26 0 0 0 0 0 0 102 100 0 0 148 90 116 66 0 0 0 0
+node "B" 266 927.072 1 -3 pc 0 0 0 0 0 0 0 0 0 0 196 190 0 0 32 32 140 98 0 0 0 0
+node "A" 262 1030.68 -24 -9 pc 0 0 0 0 0 0 0 0 0 0 198 190 0 0 32 32 80 48 0 0 0 0
+node "vdd" 2659 6453.29 -31 0 nw 96 96 170 94 2560 224 0 0 0 0 0 0 0 0 464 240 0 0 0 0 0 0
+substrate "gnd" 0 0 -25 -28 poc 72 60 96 96 0 0 0 0 0 0 0 0 0 0 360 188 0 0 0 0 0 0
+cap "a_n9_6#" "a_n9_n20#" 202.098
+cap "A_bar" "a_n9_6#" 167.98
+cap "B" "a_n9_n20#" 50.5632
+cap "A_bar" "B" 373.892
+cap "a_14_n20#" "B_bar" 0.182516
+cap "B_bar" "vdd" 200.109
+cap "B_bar" "a_n9_n20#" 243.183
+cap "A_bar" "B_bar" 140.593
+cap "vdd" "A" 204.407
+cap "B" "a_n9_6#" 55.3002
+cap "a_n9_n20#" "A" 68.8835
+cap "A_bar" "A" 161.35
+cap "a_14_n20#" "a_n9_n20#" 1.10332
+cap "B_bar" "a_n9_6#" 12.9603
+cap "B" "B_bar" 589.364
+cap "vdd" "a_n9_n20#" 32.4274
+cap "A_bar" "vdd" 266.696
+cap "a_n9_6#" "A" 12.3503
+cap "B" "A" 113.31
+cap "A_bar" "a_n9_n20#" 178.814
+cap "a_n2_n20#" "a_n9_n20#" 1.10332
+cap "vdd" "a_n9_6#" 419.687
+cap "B" "vdd" 229.666
+device mosfet nfet 36 -20 37 -19 2 4 "gnd" "B" 4 0 "B_bar" 4 20,18 "gnd" 4 20,18
+device mosfet nfet 20 -20 21 -19 2 4 "gnd" "A_bar" 4 0 "a_14_n20#" 4 12,10 "a_n9_n20#" 4 20,18
+device mosfet nfet 12 -20 13 -19 2 4 "gnd" "B_bar" 4 0 "gnd" 4 16,12 "a_14_n20#" 4 12,10
+device mosfet nfet 4 -20 5 -19 2 4 "gnd" "B" 4 0 "a_n2_n20#" 4 12,10 "gnd" 4 16,12
+device mosfet nfet -4 -20 -3 -19 2 4 "gnd" "A" 4 0 "a_n9_n20#" 4 20,18 "a_n2_n20#" 4 12,10
+device mosfet nfet -20 -20 -19 -19 2 4 "gnd" "A" 4 0 "gnd" 4 20,18 "A_bar" 4 20,18
+device mosfet pfet 36 7 37 8 2 8 "vdd" "B" 4 0 "B_bar" 8 40,26 "vdd" 8 40,26
+device mosfet pfet 20 6 21 7 2 15 "vdd" "A_bar" 4 0 "a_n9_n20#" 15 45,21 "a_n9_6#" 15 75,40
+device mosfet pfet 12 6 13 7 2 15 "vdd" "B_bar" 4 0 "a_n9_6#" 15 45,21 "a_n9_n20#" 15 45,21
+device mosfet pfet 4 6 5 7 2 15 "vdd" "B" 4 0 "vdd" 15 45,21 "a_n9_6#" 15 45,21
+device mosfet pfet -4 6 -3 7 2 15 "vdd" "A" 4 0 "a_n9_6#" 15 75,40 "vdd" 15 45,21
+device mosfet pfet -20 6 -19 7 2 8 "vdd" "A" 4 0 "vdd" 8 40,26 "A_bar" 8 40,26
